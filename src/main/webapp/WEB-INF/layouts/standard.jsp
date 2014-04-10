@@ -21,11 +21,11 @@
 <div id="page" class="container">
 	<div>
 		<div class="span-1"><p> </p></div>
-		<div class="span-4 colborder"><h4>SpringWebflowBasic</h4></div>
-		<div class="span-4"><h4><a href="<c:url value="/"/>">Home</a></h4></div>
-		<div class="span-4"><h4><a href="<c:url value=""/>">Empty</a></h4></div>
-		<div class="span-4"><h4><a href="<c:url value=""/>">Empty</a></h4></div>
-		<div class="span-4"><h4><a href="<c:url value=""/>">Empty</a></h4></div>
+		<div class="span-4 colborder"><br /><h3>SpringWebflowBasic</h3></div>
+		<div class="span-4"><h4><br /><a href="<c:url value="/"/>">Home</a></h4></div>
+		<div class="span-4"><h4><br /><a href="<c:url value=""/>">Empty</a></h4></div>
+		<div class="span-4"><h4><br /><a href="<c:url value=""/>">Empty</a></h4></div>
+		<div class="span-4"><h4><br /><a href="<c:url value=""/>">Empty</a></h4></div>
 		<div class="span-1"><p> </p></div>
 		<hr>
 	</div>
