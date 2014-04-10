@@ -10,9 +10,6 @@
 
 	<!-- Executes flows: the entry point into the Spring Web Flow system -->
 	<webflow:flow-executor id="flowExecutor">
-		<webflow:flow-execution-listeners>
-			<webflow:listener ref="facesContextListener"/>
-		</webflow:flow-execution-listeners>
 	</webflow:flow-executor>
 	
 	<!-- The registry of executable flow definitions -->

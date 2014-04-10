@@ -2,13 +2,11 @@
 <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
-
-	<!-- The master configuration file for this Spring web application -->
+		
 	<context-param>
+		<!-- The master configuration file for this Spring web application -->
 		<param-name>contextConfigLocation</param-name>
-		<param-value>
-			/WEB-INF/spring/application-context.xml
-		</param-value>
+		<param-value>/WEB-INF/spring/application-context.xml</param-value>
 	</context-param>
 
 	<!-- Loads the Spring web application context -->
@@ -44,5 +42,20 @@
 		<servlet-name>Spring MVC Dispatcher Servlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
+	<!-- Just here so the JSF implementation can initialize, *not* used at runtime -->
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<!-- Just here so the JSF implementation can initialize -->
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.faces</url-pattern>
+	</servlet-mapping>
+
+
 
 </web-app>
