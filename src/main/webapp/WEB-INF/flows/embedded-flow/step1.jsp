@@ -4,7 +4,7 @@
 	<p>Fill project</p>
 	<form id="step1" action="${flowExecutionUrl}" method="POST">
 		<button id="cancel" type="submit" name="_eventId_cancel">Cancel</button>
-		<button id="previous" type="submit" name="_eventId_previous" disabled>&lt;&lt; Previous</button>
+		<button id="previous" type="submit" name="_eventId_previous" disabled style="opacity:0.25;">&lt;&lt; Previous</button>
 		<button id="next" type="submit" name="_eventId_next">Next &gt;&gt;</button>
 	</form>
 </div>

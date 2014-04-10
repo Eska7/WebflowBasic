@@ -1,6 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
-<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -23,9 +22,9 @@
 		<div class="span-1"><p> </p></div>
 		<div class="span-4 colborder"><br /><h3>SpringWebflowBasic</h3></div>
 		<div class="span-4"><h4><br /><a href="<c:url value="/"/>">Home</a></h4></div>
-		<div class="span-4"><h4><br /><a href="<c:url value=""/>">Empty</a></h4></div>
-		<div class="span-4"><h4><br /><a href="<c:url value=""/>">Empty</a></h4></div>
-		<div class="span-4"><h4><br /><a href="<c:url value=""/>">Empty</a></h4></div>
+		<div class="span-4"><h4><br /><a href="<c:url value="#"/>">#</a></h4></div>
+		<div class="span-4"><h4><br /><a href="<c:url value="#"/>">#</a></h4></div>
+		<div class="span-4"><h4><br /><a href="<c:url value="#"/>">#</a></h4></div>
 		<div class="span-1"><p> </p></div>
 		<hr>
 	</div>

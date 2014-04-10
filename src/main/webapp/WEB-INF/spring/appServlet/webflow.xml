@@ -11,7 +11,7 @@
 	<!-- Executes flows: the entry point into the Spring Web Flow system -->
 	<webflow:flow-executor id="flowExecutor">
 		<webflow:flow-execution-listeners>
-			<webflow:listener ref="securityFlowExecutionListener" />
+			<webflow:listener ref="facesContextListener"/>
 		</webflow:flow-execution-listeners>
 	</webflow:flow-executor>
 	
@@ -32,8 +32,5 @@
 	
 	<!-- Bootstraps JSR-303 validation and exposes it through Spring's Validator interface -->
 	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
-	
-	<!-- Installs a listener to apply Spring Security authorities -->
-	<bean id="securityFlowExecutionListener" class="org.springframework.webflow.security.SecurityFlowExecutionListener" />
 		
 </beans>
